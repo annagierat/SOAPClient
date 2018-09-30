@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link th:href="@{css/style.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Home</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="top-navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home<span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="/contact">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section class="top-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <form   method="get">
+
+
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label for="name">Imię</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Wpisz imię" required pattern="[a-zA-Z]{2-64}">
+                    </div>
+
+
+
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label for="surname">Nazwisko</label>
+                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Wpisz nazwisko" required pattern="[a-zA-Z]{2-64}">
+                    </div>
+
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <label for="age">Wiek</label>
+                            <input type="number" class="form-control" id="age" name="age" placeholder="Wpisz wiek"><br><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Wpisz email" required><br><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input id="newsletter"type="checkbox" name="newsletter">
+                            <label for="newsletter">Newsletter</label><br><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input type="radio" id="man" name="sex" value="M" required>
+                            <label for="man">Mężczyzna</label><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input type="radio" id="woman" name="sex" value="W" required>
+                            <label for="woman">Kobieta</label><br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <label for="birth">Data urodzenia</label>
+                            <input type="date" id="birth" name="birth" placeholder="Wpisz datę urodzenia"><br><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <label for="kids">Ilość dzieci</label>
+                            <select id="kids">
+
+                                <option value="0">Nie mam dzieci</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option>Więcej</option>
+                            </select><br><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <label for="life-history">Opisz swoją historię</label>
+                            <textarea id="life-history" name="life-history" cols="50" rows="5"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-group col-xs-12 col-sm-6">
+                    <div class="row">
+                        <button type="button" class="absolute" value="Wyślij">Wyślij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                                                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                                                 crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
